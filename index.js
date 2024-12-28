@@ -44,6 +44,12 @@ app.use("/api", ticketRoutes);
 app.use("/api", attendeeRoutes);
 app.use("/api", paymentRoutes);
 
+// Optional: Add a default route to prevent "Cannot GET /"
+app.get('/', (req, res) => {
+    res.send('Event Management API');
+});
+
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
