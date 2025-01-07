@@ -16,7 +16,7 @@ const paymentRoutes = require("./routes/paymentRoutes");
 const app = express();
 
 // Enable CORS for all origins or specify your frontend URL
-const allowedOrigins = ['https://online-task-event.netlify.app', 'http://localhost:3000'];
+const allowedOrigins = ['https://event-task-frontend.netlify.app/', 'http://localhost:3000'];
 
 const corsOptions = {
   origin: function (origin, callback) {
